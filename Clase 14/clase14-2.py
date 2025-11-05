@@ -1,0 +1,13 @@
+from tkinter import *
+ventana = Tk()
+Marco = Frame(ventana)
+Marco.config(bg="red",width=480, height=480)
+prueba=Label(Marco,text="Esto es un texto de prueba").grid(column=1, row=1)
+prueba2=Label(Marco,text="Esto es un texto de prueba").grid(column=2, row=1)
+prueba3=Label(Marco,text="Esto es un texto de prueba").grid(column=1, row=2)
+prueba4=Label(Marco,text="Esto es un texto de prueba").grid(column=2, row=2)
+Marco.pack()
+ventana2 = Toplevel(Marco)
+ventana2.config(bg="blue")
+ventana2.geometry("800x800")
+ventana.mainloop()
